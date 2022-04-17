@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Manajemen Barang</string>
+    <string name="webservice">http://192.168.162.84/ApiAndro/</string>
+</resources>

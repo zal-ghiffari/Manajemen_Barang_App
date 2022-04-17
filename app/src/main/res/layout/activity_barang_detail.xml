@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarangDetail">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#FAFAFA"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/bar"
+        android:id="@+id/scrollViewVeiculoDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lnbuttons">
+
+        <RelativeLayout
+            android:id="@+id/VeiculoDetalheContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlNama"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="Nama:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:text="nama"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/rlNama"
+                android:id="@+id/rlMerek"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Merek:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtmerek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="merek"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlWarna"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@id/rlMerek">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="Warna:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtwarna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:text="warna"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlTahun"
+                android:layout_below="@id/rlWarna"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Tahun:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txttahun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="tahun"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlHarga"
+                android:layout_below="@id/rlTahun"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Harga:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtharga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="harga"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlKeterangan"
+                android:layout_below="@id/rlHarga"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:text="Keterangan:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtketerangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="keterangan"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="textEnd"
+                    android:layout_toEndOf="@id/textView7"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RtlCompat" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlKondisi"
+                android:layout_below="@id/rlKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="Kondisi:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtkondisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="kondisi"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlTanggalMasuk"
+                android:layout_below="@id/rlKondisi"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Tanggal Masuk:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txt_tanggal_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="tanggal_masuk"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlTanggalUpdate"
+                android:layout_below="@id/rlTanggalMasuk"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Tanggal Update:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txt_tanggal_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="tanggal_update"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ACACAC" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lnbuttons"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        android:background="@color/teal_700"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/btnKembali"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Kembali"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/btnEdit"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/btnHapus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Hapus"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
